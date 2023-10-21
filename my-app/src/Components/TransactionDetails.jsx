@@ -1,9 +1,10 @@
 import {Link, useParams} from "react-router-dom";
-import (useState, useEffect)
+import {useState, useEffect} from "react";
 
 function TransactionDetails(){
     const [transaction, setTransaction] = useState([]);
-    let {index} = useParams();
+    
+    const {index} = useParams();
 
     useEffect(() => {
         fetch(`{API}/transactions/${index}`)
@@ -11,7 +12,7 @@ function TransactionDetails(){
         .then(transaction => {
             setTransaction(transaction)
         })
-        .catch(error)
+        .catch((err) => console.error(err))
     }, [index]);
 
     const handleDelete = () => {
