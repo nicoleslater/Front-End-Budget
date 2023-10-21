@@ -1,5 +1,6 @@
 import {Link, useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
+const API ="http://localhost:3000";
 
 function TransactionDetails(){
     const [transaction, setTransaction] = useState([]);
@@ -27,3 +28,19 @@ function TransactionDetails(){
     
 }
 }
+return (
+    <div className="indexNavigation">
+        <div> 
+            <Link to={`/transactions`}>
+                <button>Return</button>
+            </Link>
+            <div> 
+         <Link to={`/transactions/${index}/edit`}>
+         <button>Edit</button>
+         </Link>
+         </div>
+         </div>
+    </div>
+    
+)
+export default TransactionDetails;
