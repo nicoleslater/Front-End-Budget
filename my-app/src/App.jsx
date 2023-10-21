@@ -11,6 +11,10 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/transactions" element={<Index />}/>
+        <Route path="/transactions/new" element={<New />} />
+        <Route path="/transactions/:index" element={<Show />} />
+        <Route path="/transactions/:index/edit" element={<Edit />} />
       </Routes>
     </main>
    </Router>
