@@ -1,11 +1,19 @@
 import {Link} from "react-router-dom";
 
-function Transaction({index}){
+function Transaction({ transaction }){
     return (
         <tr>
             <td>
-                <Link to={`/transactions/${index}`}></Link>
+                {transaction.is_priority ? (
+                    <span>💰</span>
+                ) : (
+                    <span>&nbsp; &nbsp; &nbsp;</span>
+                )}
             </td>
+            <td style={{ cursor: "default"}}>
+                <a href={transaction.}
+            </td>
+
         </tr>
     )
 }export default Transaction;

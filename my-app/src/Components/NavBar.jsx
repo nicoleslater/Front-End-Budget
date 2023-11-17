@@ -5,10 +5,10 @@ export default function NavBar(){
         <div>
             <nav>
                 <h3>
-<Link to="/transactions">Transactions</Link>
+                <Link to="/transactions">Transactions</Link>
                 </h3>
                 <button>
-                    <Link to="/transactions/new"> New Budget Entry</Link>
+                <Link to="/transactions/new"> New Budget Entry</Link>
                 </button>
                 
             </nav>
