@@ -10,10 +10,20 @@ function Transaction({ transaction }){
                     <span>&nbsp; &nbsp; &nbsp;</span>
                 )}
             </td>
-            <td style={{ cursor: "default"}}>
-                <a href={transaction.}
+            <td>
+                {transaction.item_name}
+            </td>
+            <td>
+                {transaction.amount}
+            </td>
+            <td>
+                {transaction.due_date}
+            </td>
+            <td>
+                <Link to={`/transactions/${transaction.id}`}>🏦</Link>
             </td>
 
         </tr>
-    )
-}export default Transaction;
+    );
+}
+export default Transaction;
