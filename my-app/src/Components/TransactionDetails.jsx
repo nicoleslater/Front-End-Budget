@@ -1,14 +1,17 @@
-import {Link, useParams} from "react-router-dom";
-import {useState, useEffect} from "react";
+import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { navigate } from 'react-router-dom';
+
 const API ="http://localhost:3000";
 
 function TransactionDetails(){
     const [transaction, setTransaction] = useState([]);
     
-    const {index} = useParams();
+    const { id } = useParams();
+    
 
     useEffect(() => {
-        fetch(`{API}/transactions/${index}`)
+        fetch(`{API}/transactions/${id}`)
         .then(response => response.json())
         .then(transaction => {
             setTransaction(transaction)
@@ -25,8 +28,7 @@ function TransactionDetails(){
            navigate('/transactions'); 
         })
         .catch((err) => console.error(err))
-    
-}
+    }
 }
 return (
     <div className="indexNavigation">
