@@ -11,38 +11,50 @@ function TransactionDetails(){
     
 
     useEffect(() => {
-        fetch(`{API}/transactions/${id}`)
-        .then(response => response.json())
-        .then(transaction => {
-            setTransaction(transaction)
+        fetch(`${API}/transactions/${id}`)
+        .then((response) => response.json())
+        .then((responseJSON) => {
+            setTransaction(responseJSON)
         })
-        .catch((err) => console.error(err))
-    }, [index]);
+        .catch(error => console.log(error))
+    }, [id, API])
+    
 
     const handleDelete = () => {
-
-        const httpOptions = {"method": "DELETE"}
-
-        fetch(`${API}/transactions/${index}`, httpOptions)
-        .then((res) => {
-           navigate('/transactions'); 
-        })
-        .catch((err) => console.error(err))
+        deleteTransaction()
     }
-}
+
+    const deleteTransaction = () => {
+        const httpOptions = { method: "DELTE" }
+        fetch(`${API}/transactions/${id}`, httpOptions)
+        .then(() => navigate(`/transactions`))
+        .catch(error => console.log(error))
+    }
+   
+
 return (
-    <div className="indexNavigation">
+    <article>
+    <div className="showNavigation">
         <div> 
             <Link to={`/transactions`}>
                 <button>Return</button>
             </Link>
             <div> 
-         <Link to={`/transactions/${index}/edit`}>
+         <Link to={`/transactions/${id}/edit`}>
          <button>Edit</button>
          </Link>
          </div>
+         <button onClick={handleDelete}>Delete</button>
          </div>
     </div>
+    <div className="transaction">
+        <div>
+            <span className="label">{transaction.item_name}Item Name:</span>
+        </div>
+    </div>
+    </article>
     
 )
+}
+
 export default TransactionDetails;
