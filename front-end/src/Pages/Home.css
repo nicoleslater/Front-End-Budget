@@ -1,0 +1,23 @@
+:root{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    /* background-image: url("); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-decoration-color: #f9f3f9;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 20px;
+  }
+
+.home-text{
+    background-color: rgb(55, 34, 34);
+    border: 3px solid rgb(14, 2, 47);
+    opacity: .5;
+}
