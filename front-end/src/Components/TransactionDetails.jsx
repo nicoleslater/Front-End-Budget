@@ -36,7 +36,7 @@ function TransactionDetails(){
                 <a href={transaction.name}></a>
                 </span>
                 <h4>
-                  {transaction.}
+                  {transaction.date}
                 </h4>
               </h5>
             </article>
