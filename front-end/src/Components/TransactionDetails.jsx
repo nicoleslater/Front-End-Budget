@@ -30,7 +30,18 @@ function TransactionDetails(){
 
       return (
         <div>
-            
+            <article>
+              <h5>
+                <span>
+                <a href={transaction.name}></a>
+                </span>
+                <h4>
+                  {transaction.}
+                </h4>
+              </h5>
+            </article>
         </div>
       )
 }
+
+export default TransactionDetails;
