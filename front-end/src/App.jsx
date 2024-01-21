@@ -7,7 +7,7 @@ import Index from "./Pages/Index";
 import Edit from "./Pages/Edit";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
-import FourOFour from "./Pages/FourOFour";
+// import FourOFour from "./Pages/FourOFour";
 import NavBar from "./Components/NavBar";
 
 
@@ -24,7 +24,7 @@ function App(){
             <Route path="transactions/new" element={<New />} />
             <Route exact path="transactions/:id" element={<Show />} />
             <Route path="/transactions/:id/edit" element={<Edit />} />       
-            <Route path="*" element={<FourOFour />} />
+            {/* <Route path="*" element={<FourOFour />} /> */}
              </Routes>
         </main>
       </Router>
