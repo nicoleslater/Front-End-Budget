@@ -48,7 +48,7 @@ function TransactionDetails(){
         </div>
         <div>
             <Link to={`/transactions/new`}>
-            <button>Add Budget Transaction</button>
+            <button>Add to Current Budget</button>
             </Link>
         </div>
             <button onClick={handleDelete}>Delete Transaction</button>

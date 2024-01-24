@@ -111,6 +111,7 @@ function TransactionEditForm(){
                   <input
                     id="amount"
                     value={transaction.amount}
+                    onChange={handleTextChange}
                     type="text"
                     required
                   />
