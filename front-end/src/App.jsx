@@ -24,7 +24,7 @@ function App(){
             <Route path="transactions/new" element={<New />} />
             <Route exact path="transactions/:id" element={<Show />} />
             <Route path="/transactions/:id/edit" element={<Edit />} />       
-            {/* <Route path="*" element={<FourOFour />} /> */}
+            <Route path="*" element={<FourOFour />} />
              </Routes>
         </main>
       </Router>
