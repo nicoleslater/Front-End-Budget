@@ -16,7 +16,7 @@ function TransactionEditForm(){
     });
 
     const handleTextChange = (event) => {
-        setTransaction({ ...product, [event.target.id]: event.target.value });
+        setTransaction({ ...transaction, [event.target.id]: event.target.value });
     };
 
     const handleCheckboxChange = () => {
