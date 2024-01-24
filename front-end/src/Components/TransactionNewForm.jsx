@@ -83,7 +83,7 @@ const handleCheckboxChange = () => {
                   />
         <div>
           <button type="submit" className="bg-pink-300 text-white p-2 rounded-md hover:bg-purple-600 focus:outline-none focus:shadow-outline-black active:bg-black-800">
-            Add Transaction
+            Add New Transaction
           </button>
         </div>
       </form>

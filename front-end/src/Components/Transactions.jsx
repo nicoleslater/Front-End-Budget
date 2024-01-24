@@ -22,12 +22,6 @@ function Transactions() {
     <div className="Transactions">
         <section>
             <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                    
-                    </tr>
-                </thead>
                 <tbody>
                     {transactions.map((transaction) => {
                         return <Transaction key={transaction.id} transaction={transaction} />;
