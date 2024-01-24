@@ -57,7 +57,7 @@ function TransactionEditForm(){
 
     return (
         <div className="Edit">
-            <h2>Add Transaction to Budget</h2>
+            <h2>Update Transaction</h2>
           <table>
             <tbody>
               <tr>
@@ -124,7 +124,7 @@ function TransactionEditForm(){
           </div>
       
           <Link to={`/transactions/${id}`}>
-            <button>Changed My Mind! 😌 </button>
+            <button>Go Back to Current Transaction 😌 </button>
           </Link>
         </div>
       );
