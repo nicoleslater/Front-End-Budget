@@ -8,12 +8,12 @@ export default function NavBar(){
                 <Link to={`/`}>Home</Link>
                 </h3>
                 <div>
-            <Link to={`/transactions/new`}>
+            <Link to={`transactions/new`}>
             <button>Add Budget Transaction</button>
             </Link>
         </div>
         <div>
-            <Link to={`/transactions/:id`}>
+            <Link to={`transactions/:id`}>
             <button>Recent Transactions</button>
             </Link>
         </div>

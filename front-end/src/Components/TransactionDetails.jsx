@@ -47,7 +47,7 @@ function TransactionDetails(){
         <div>
         </div>
         <div>
-            <Link to={`/transactions/new`}>
+            <Link to={`transactions/new`}>
             <button>Add to Current Budget</button>
             </Link>
         </div>

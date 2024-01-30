@@ -1,4 +1,9 @@
-function Transaction({ transaction }){
+import React from "react";
+import "./Transaction.css";
+
+
+
+function Transaction(){
 
 
  
