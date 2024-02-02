@@ -8,7 +8,8 @@ import Show from "./Pages/Show";
 import FourOFour from "./Pages/Four0Four";
 
 
-// import NavBar from "./Components/NavBar";
+
+import NavBar from "./Components/NavBar";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
   return (
       <div className="App">
         <Router>
-       {/* <NavBar /> */}
+       <NavBar />
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
