@@ -34,7 +34,7 @@ function TransactionEditForm(){
             },
         })
         .then((response) => {
-            navigate(`/transactions/${id}`);
+            navigate(`transactions/${id}`);
         })
         .catch((error) => console.error("catch", error));
     };
@@ -124,7 +124,7 @@ function TransactionEditForm(){
             </button>
           </div>
       
-          <Link to={`/transactions/${id}`}>
+          <Link to={`transactions/${id}`}>
             <button>Go Back to Current Transaction 😌 </button>
           </Link>
         </div>
