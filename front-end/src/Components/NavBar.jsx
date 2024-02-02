@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 export default function NavBar(){
     return (
@@ -8,12 +9,12 @@ export default function NavBar(){
                 <Link to={`/`}>Home</Link>
                 </h3>
                 <div>
-            <Link to={`transactions/new`}>
-            <button>Add Budget Transaction</button>
+            <Link to={`/transactions`}>
+            <button>Transactions</button>
             </Link>
         </div>
         <div>
-            <Link to={`transactions/:id`}>
+            <Link to={`/transactions/:id`}>
             <button>Recent Transactions</button>
             </Link>
         </div>

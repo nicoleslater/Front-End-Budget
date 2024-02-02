@@ -1,0 +1,31 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav h3 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+nav button {
+    background-color: #220241;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}
