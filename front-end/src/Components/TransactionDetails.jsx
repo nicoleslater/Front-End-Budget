@@ -31,18 +31,17 @@ function TransactionDetails(){
     deleteTransaction();
   };
 
+  if(loading){
+    return <div>Loading.....thank you for your patience!</div>
+  }
+  if(!transaction){
+    return <div>No transaction found. Please go back. Thank you!</div>
+  }
+
   return (
 
 <div> 
     <article> 
-   
-        <h5>
-            <span>
-              
-              
-            </span>
-            &nbsp;&nbsp;&nbsp;&nbsp; 
-        </h5>
         <h4>{transaction.name}</h4>
         <h4>{transaction.amount}</h4>
         <h4>{transaction.vendor}</h4>
