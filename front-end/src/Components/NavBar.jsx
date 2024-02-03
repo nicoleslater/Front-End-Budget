@@ -3,25 +3,21 @@ import "./NavBar.css";
 
 export default function NavBar(){
     return (
-        <div>
-        <nav>
-                <div>
-                
-                <Link to={`/`}>Home</Link>
-            
-                </div>
-         <div>
-            <Link to={`/transactions`}>
+        <div class="nav-container">
+        <div class="nav-item">
+          <Link to={`/`} style={{ textDecoration: 'none' }}>Home</Link>
+        </div>
+        <div class="nav-item">
+          <Link to={`/transactions`} style={{ textDecoration: 'none' }}>
             <button>Transactions</button>
-            </Link>
+          </Link>
         </div>
-        <div>
-            <Link to={`/transactions/:id`}>
+        <div class="nav-item">
+          <Link to={`/transactions/:id`} style={{ textDecoration: 'none' }}>
             <button>Recent Transactions</button>
-            </Link>
+          </Link>
         </div>
-                
-            </nav>
-        </div>
+      </div>
+      
     );
 }
