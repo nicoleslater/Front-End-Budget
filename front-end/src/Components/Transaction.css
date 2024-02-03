@@ -3,29 +3,31 @@
     justify-content: center;
   }
   
-.booster {
+  .booster {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 300px; 
     padding: 20px;
     margin: 20px;
   }
-
+  
   .cardTitle {
     text-align: center;
+    color: black;
   }
   
   .cardTitle h3 {
     margin: 0;
+    color: black;
   }
   
   .cardTitle p {
     margin: 5px 0;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: black;
   }
   
   .image img {
@@ -37,6 +39,7 @@
   
   .cardText {
     margin-top: 20px;
+    color: black;
   }
   
   .property {
@@ -47,7 +50,7 @@
   
   .property span {
     font-size: 16px;
-    color: #555;
+    color: black;
   }
   
   .property span:first-child {
@@ -65,3 +68,4 @@
   .property span:last-child.high {
     color: green;
   }
+  
