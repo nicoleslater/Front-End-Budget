@@ -1,41 +1,67 @@
 .transactionCardList-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center;
   }
   
 .booster {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
     padding: 20px;
+    margin: 20px;
   }
 
   .cardTitle {
-    margin-bottom: 10px;
+    text-align: center;
   }
-
+  
   .cardTitle h3 {
-    font-size: 18px;
     margin: 0;
   }
-
+  
   .cardTitle p {
-    font-size: 16px;
-    margin: 0;
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
     color: #333;
   }
-
+  
   .image img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .cardText p {
-    font-size: 14px;
-    margin: 5px 0;
-    color: #666;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
   }
   
+  .cardText {
+    margin-top: 20px;
+  }
   
+  .property {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
   
+  .property span {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .property span:first-child {
+    font-weight: bold;
+  }
+  
+  .property span:last-child {
+    text-align: right;
+  }
+  
+  .property span:last-child.low {
+    color: red;
+  }
+  
+  .property span:last-child.high {
+    color: green;
+  }
