@@ -1,10 +1,8 @@
 import "./Home.css"
-import NavBar from "../Components/NavBar";
 
 function Home() {
     return (
         <div> 
-          <NavBar />
       <div className="home-container">
         <div className="home-text">
           <h2 className="text-4xl underline">Welcome to Your Budget App!</h2>
