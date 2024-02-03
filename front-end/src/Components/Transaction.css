@@ -1,0 +1,41 @@
+.transactionCardList-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+.booster {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .cardTitle {
+    margin-bottom: 10px;
+  }
+
+  .cardTitle h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .cardTitle p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .cardText p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  
+  

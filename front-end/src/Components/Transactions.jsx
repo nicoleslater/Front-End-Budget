@@ -19,17 +19,16 @@ function Transactions() {
   }, []);
 
   return (
-    <div className="Transactions">
-      <section>
-        <table>
-          <tbody>
-            {transactions.map((transaction) => {
-              return <Transaction key={transaction.id} transaction={transaction} />;
-            })}
-          </tbody>
-        </table>
-      </section>
-    </div>
+<div className="Transactions">
+  <table>
+    <tbody>
+      {transactions.map((transaction) => {
+        return <Transaction key={transaction.id} transaction={transaction} />;
+      })}
+    </tbody>
+  </table>
+</div>
+
   );
 }
 export default Transactions;
