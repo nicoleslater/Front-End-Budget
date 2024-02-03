@@ -12,11 +12,11 @@ export default function NavBar(){
             <button>Transactions</button>
           </Link>
         </div>
-        {/* <div className="nav-item">
-          <Link to={`/transactions/${id}`} style={{ textDecoration: 'none' }}>
-            <button>Recent Transactions</button>
+        <div className="nav-item">
+          <Link to={`/goals`} style={{ textDecoration: 'none' }}>
+            <button>Goals</button>
           </Link>
-        </div> */}
+        </div>
       </div>
       
     );
