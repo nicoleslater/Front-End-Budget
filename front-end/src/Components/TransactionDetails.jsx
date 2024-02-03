@@ -5,16 +5,19 @@ const API = import.meta.env.VITE_BASE_URL;
 
 function TransactionDetails(){
   const [ transaction, setTransaction ] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
+    setLoading(true);
     fetch(`${API}/transactions/${id}`)
     .then((response) => response.json())
     .then((responseJSON) => {
       setTransaction(responseJSON)
     })
-    .catch(error => console.log(error))
+    .catch((error) => console.error('Error fetching transaction:', error))
+    .finally(() => setLoading(false));
   }, [id, API])
 
   const deleteTransaction = () => {
@@ -41,6 +44,9 @@ function TransactionDetails(){
             &nbsp;&nbsp;&nbsp;&nbsp; 
         </h5>
         <h4>{transaction.name}</h4>
+        <h4>{transaction.amount}</h4>
+        <h4>{transaction.vendor}</h4>
+        <h4>{transaction.category}</h4>
         <h4>{transaction.deadline}</h4>
         <h4>{transaction.priority}</h4>
         <div className="navigation"> 
