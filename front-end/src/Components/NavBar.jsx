@@ -4,11 +4,13 @@ import "./NavBar.css";
 export default function NavBar(){
     return (
         <div>
-            <nav>
-                <h3>
-                <Link to={`/`}>Home</Link>
-                </h3>
+        <nav>
                 <div>
+                
+                <Link to={`/`}>Home</Link>
+            
+                </div>
+         <div>
             <Link to={`/transactions`}>
             <button>Transactions</button>
             </Link>

@@ -14,10 +14,10 @@
 .header::before {
     content: "";
     display: block;
-    background-image: url('path/to/your/logo.png'); /* Replace 'path/to/your/logo.png' with the path to your logo image */
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100px; /* Adjust the width of the logo as per your design */
-    height: 100px; /* Adjust the height of the logo as per your design */
-    margin: 0 auto 10px; /* Center the logo horizontally and add some space below */
+    /* background-image: url('path/to/your/logo.png'); 
+    /* background-size: contain; */
+    /* background-repeat: no-repeat;  */
+    width: 100px; 
+    height: 100px;
+    margin: 0 auto 10px; 
 }
